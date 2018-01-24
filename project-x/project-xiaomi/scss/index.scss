@@ -1,0 +1,47 @@
+*{
+	padding:0;
+	margin:0
+}
+li{list-style:none;}
+a{text-decoration:none;}
+
+/* --------header----------- */
+
+.header{
+	background: #333;
+
+}
+header{
+
+	height:40px;
+	font-size: 12px;
+	.ul_l {
+		height:40px;
+		width: 401px;
+		float:left;
+		margin-left: 19px;
+		li{
+			float:left;
+			line-height:40px;
+			padding-left:6px;
+			padding-right: 6px;
+			a{
+				color: #b0b0b0;
+				
+			}
+		}
+	}
+	.ul_r {
+		height:40px;
+		float:right;
+		li{
+			float:left;
+			padding-left:6px;
+			padding-right: 6px;
+			line-height:40px;
+			a{
+				color: #b0b0b0;
+			}
+		}
+	}
+}

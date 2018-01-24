@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		/*function filterStr(str){
+			if(str.indexOf("杨美珠") != -1){
+				var newStr = str.replace("杨美珠","***");
+			}else{
+				return str;
+			}
+			return newStr;			
+		}
+		alert(filterStr("杨美dksad"));*/
+		//已知有两个字符串str1 = ‘hello’ str2 = ‘world’,将两个拼接
+		// var str1 = "hello"; str2 = "world";
+		// alert(str1+str2);
+		//已知字符串str = “I love BeiJing”,找出love的范围
+		/*var str ="I love BeiJing";
+		var d = str.indexOf("love");
+		alert(d);
+		alert("love的范围是" + d + "~"  + 6);*/
+		//已知字符串 str = “I  hate BeiJing!”,提取第3个字符到第5个字符
+
+
+		/*4.实现函数，查找子串出现的次数，返回字符串str中出现substring的次数
+			传入:”abcabcabc”, “abc”
+			返回:3*/
+			function countStr(str,b){
+				var count = 0;
+				var index = 0;
+					if(str.indexOf(b) != -1){
+						while(str){
+							count++;
+							index = str.indexOf(b);
+							str = str.substring(index + b.length,str.length);
+						}			
+					}
+				
+				return count;
+			}
+			alert(countStr("abcabcabcabcabc","abc"));
+
+
+
+			/*5.已知千峰邮箱的用户名只能由数字字母下划线组成，域名为@1000phone.com
+			,判断一个字符串是否是千锋邮箱，是返回true，不是返回false。
+			mail@1000phone.com  是
+			$mail@1000phone.com  不是
+			mail@1000phone.comp  不是
+*/
+			//思路：
+			//分两部分判断：先判断后面的域名
+			//再判断用户名
+			function judgeQ(str){
+				//查找@符号 对他前面的用户名 进行判断
+				var arr = str.split("@");//分割字符串 保存到数组中
+				//对arr[0]进行用户名判断
+				
+				//用户名判断：即对用户名部分判断 是否包含除了数字、字母、下划线 的其他字符，但是找出其他字符太麻烦 取反 我们判断 ——————用户名部分每个字符是否都是数字、字符、下划线 如果不是 就break
+			
+				if(arr.length != 2){
+					return false;
+				}else{
+					if(arr[1] != "1000phone.com"){
+						return false;
+					}else{
+						//对arr[0]进行用户名判断  先声明一个变量保存arr[0];
+						var temp = arr[0];
+						//循环用户名部分
+						for(var i = 0; i < temp.length;i++){
+							if(!isValid(temp[i])){
+								return false;
+								break;
+							}else{
+								return true;
+							}
+						}
+					}
+				
+				}
+				
+			}
+			alert(judgeQ("mail@1000phone.comp"));
+			//判断字符是否是数字、字母、下划线
+				function isValid(char){
+					if(isChar(char) || char >= "0" && char <= "9" || char == "_"){
+						return true;
+					}else{
+						return false;
+					}
+				}
+			//判断一个字符是否是字母    就是判断他是不是在 a~z或者A~Z之间
+				function isChar(char){
+						if(char >= "a" && char <= "z" || char >= "A" && char <= "Z"){
+							return true;
+						}else {
+							return false;
+						}
+				}
+			//<2>数字和字母结合的验证码  0~9  a-zA-Z
+			//随机0 ~ 100   0~9 65~90 10~35 + 87
+			function testcode2(n){
+				var arr = [];
+				for(var i = 0; i < n; i++){
+					var num = Math.floor(Math.random() * 100);
+					if(num < 10 && num >= 0){
+						arr.push(num);
+					}else if(num >= 65 && num <= 90){
+						arr.push(String.fromCharCode(num));
+					}else if(num >= 10 && num <=35){
+						arr.push(String.fromCharCode(num + 87));
+					}else{
+						i--;
+					}
+				}
+				return arr.join("");
+			}
+		//alert(testcode2(6));
+		/*2.将字符中单词用空格隔开
+         已知传入的字符串中只有字母,每个单词的首字母大写，请将每个
+         单词用空格隔开，只保留一个单词的首字母大写
+          传入:”HelloMyWorld”
+          返回:”Hello my world”
+*/		
+		//由题目可知 这个字符串的第一个字符一定是大写 
+		function sepStr(str){
+			var arr = str.split("");//将字符串转换成数组
+			
+			for(var i = 1; i < arr.length;i++){ //循环开始位置是数组下标为1的
+				//判断是不是大写字母
+				if(arr[i] >= "A" && arr[i] <= "Z"){//两个都是字符串时比较ASCII码值
+					//将除了第一个大写字母 其他大写字母换成小写
+					arr[i] = arr[i].toLowerCase(); //这里注意要赋值回去等号 右边会生成新的字符串
+					//将大写字母前面 插入 空格
+					arr.splice(i,0," ");
+				
+				}
+				
+			}
+			return arr.join("");//将数组转换成字符串
+			
+		}
+		//alert(sepStr("HelloMyWorld"));
+		/*       1.找出出现最多的字母，找出字符串中出现次数最多的字母，将该
+				字母串中出现次数最多的字母，将该字母和字母出现的次数拼接成一个
+				新字符串，返回新字符串
+         		传入:” WelcomeToQianfeng”;
+         		返回:”e3”;   （要求大家编写成函数）
+*/
+				function maxStr(str){
+					var arr = [];
+					for(var i = 0;i < str.length;i++){
+						var count = 0;
+						for(var j = 0; j < str.length;j++){//查找每个字符出现的次数 并不是重复的
+							if(str[i] == str[j]){
+								count++;
+							}
+						}	
+						arr.push(count);				
+					}
+					//找出数组中次数最多的
+					var index = 0;
+					var max = arr[0];
+					for(var i = 0;i < arr.length;i++){
+						if(max < arr[i]){
+							max = arr[i];
+							index = i;
+						}
+					}
+					return str[index] + arr[index];
+				}
+				//alert(maxStr("WelcomeToQianfengWelcomeToQianfeng"));
+</script>
+</head>
+<body>
+	
+</body>
+</html>

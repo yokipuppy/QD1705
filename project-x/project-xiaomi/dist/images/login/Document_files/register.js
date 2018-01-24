@@ -1,0 +1,10 @@
+require.config({
+	paths:{
+		"jquery":"jquery-1.11.1",
+		"jquery-cookie":"jquery.cookie"
+	},
+	//处理依赖
+	shim:{
+		"jquery-cookie":["jquery"]
+	}
+})
