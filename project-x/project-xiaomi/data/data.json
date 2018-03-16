@@ -1,0 +1,63 @@
+
+[{
+	"title":"小米手机",
+	"items":[{"id":0,"img":"../images/index/320-220-1.png","title":"小米MIX 2","price":"2199元起"},
+		{"id":1,"img":"../images/index/note2320x220.png","title":"小米Node 3","price":"1999元起"},
+		{"id":2,"img":"../images/index/xm6-320.png","title":"小米6","price":"2299元起"},
+		{"id":3,"img":"../images/index/max2_toubu.png","title":"小米Max 6","price":"1399元起"},
+		{"id":4,"img":"../images/index/5x-2.jpg","title":"小米5x","price":"1299元起"}
+	]
+},{
+  "title":"红米",
+  "items":[{"id":0,"img":"../images/index/5-320-220.png","title":"小米MIX 2","price":"2199元起"},
+    {"id":1,"img":"../images/index/5P-320-220.png","title":"小米Node 3","price":"1999元起"},
+    {"id":2,"img":"../images/index/320-220-1.png","title":"小米6","price":"2299元起"},
+    {"id":3,"img":"../images/index/3205a.png","title":"小米Max 6","price":"1399元起"},
+    {"id":4,"img":"../images/index/320-220.jpg","title":"小米5x","price":"1299元起"},
+    {"id":5,"img":"../images/index/320220note4x.jpg","title":"小米5x","price":"1299元起"}
+  ]
+},{
+  "title":"电视",
+  "items":[{"id":0,"img":"../images/index/xmds_55.png","title":"小米MIX 2","price":"2199元起"},
+    {"id":1,"img":"../images/index/4a65.png","title":"小米Node 3","price":"1999元起"},
+    {"id":2,"img":"../images/index/daohang.png","title":"小米6","price":"2299元起"},
+    {"id":3,"img":"../images/index/320_43.png","title":"小米Max 6","price":"1399元起"},
+    {"id":4,"img":"../images/index/320_49.png","title":"小米5x","price":"1299元起"},
+    {"id":5,"img":"../images/index/465.png","title":"小米5x","price":"1299元起"}
+  ]
+},{
+  "title":"笔记本",
+  "items":[{"id":0,"img":"../images/index/bijiben32012.5.jpg","title":"小米MIX 2","price":"2199元起"},
+    {"id":1,"img":"../images/index/320x220-44.png","title":"小米Node 3","price":"1999元起"},
+    {"id":2,"img":"../images/index/bijiben320.jpg","title":"小米6","price":"2299元起"},
+    {"id":3,"img":"../images/index/bijiben320.jpg","title":"小米Max 6","price":"1399元起"},
+    {"id":4,"img":"../images/index/WechatIMG603.png","title":"小米5x","price":"1299元起"}
+  ]
+},{
+  "title":"小米手机",
+  "items":[{"id":0,"img":"../images/index/320-220-1.png","title":"小米MIX 2","price":"2199元起"},
+    {"id":1,"img":"../images/index/note2320x220.png","title":"小米Node 3","price":"1999元起"},
+    {"id":2,"img":"../images/index/xm6-320.png","title":"小米6","price":"2299元起"},
+    {"id":3,"img":"../images/index/max2_toubu.png","title":"小米Max 6","price":"1399元起"},
+    {"id":4,"img":"../images/index/5x-2.jpg","title":"小米5x","price":"1299元起"}
+  ]
+},{
+},{
+  "title":"红米",
+  "items":[{"id":0,"img":"../images/index/5-320-220.png","title":"小米MIX 2","price":"2199元起"},
+    {"id":1,"img":"../images/index/5P-320-220.png","title":"小米Node 3","price":"1999元起"},
+    {"id":2,"img":"../images/index/320-220-1.png","title":"小米6","price":"2299元起"},
+    {"id":3,"img":"../images/index/3205a.png","title":"小米Max 6","price":"1399元起"},
+    {"id":4,"img":"../images/index/320-220.jpg","title":"小米5x","price":"1299元起"},
+    {"id":5,"img":"../images/index/320220note4x.jpg","title":"小米5x","price":"1299元起"}
+  ]
+},{
+  "title":"电视",
+  "items":[{"id":0,"img":"../images/index/xmds_55.png","title":"小米MIX 2","price":"2199元起"},
+    {"id":1,"img":"../images/index/4a65.png","title":"小米Node 3","price":"1999元起"},
+    {"id":2,"img":"../images/index/daohang.png","title":"小米6","price":"2299元起"},
+    {"id":3,"img":"../images/index/320_43.png","title":"小米Max 6","price":"1399元起"},
+    {"id":4,"img":"../images/index/320_49.png","title":"小米5x","price":"1299元起"},
+    {"id":5,"img":"../images/index/465.png","title":"小米5x","price":"1299元起"}
+  ]
+}]

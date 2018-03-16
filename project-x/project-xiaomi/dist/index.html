@@ -2,20 +2,41 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/index.min.css">
+	<title>小米首页</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_571570_fbj7neq9ubd42t9.css">
 	<!-- 相对index.html的路径 -->
 	<script type="text/javascript" src="js/require.js" asyn= "true" data-main="js/main" defer></script>
+	<script type="text/javascript">
+		function fu(data){
+			var $oUl = $("#search_ul");
+			var html = "";
+			if(data.s.length){
+				$oUl.css("display","block");
+				
+
+				for(var i = 0; i < data.s.length;i++){
+					console.log(data.s[i]);
+					html+= "<li><a>" + data.s[i] + "</a></li>"
+				}
+				$oUl.html(html);
+			}else{
+				$oUl.css("display","none");
+			}
+
+
+	}
+	</script>
 </head>
 <body>
 	<div class="header">
 		<header>
 			<ul class="ul_l">
-				<li><a href="#">小米商城</a></li>
-				<li><a href="#">MIUI</a></li>
-				<li><a href="#">IoT</a></li>
+				<li><a href="index.html">小米商城</a></li>
+				<li><a href="details.html">MIUI</a></li>
+				<li><a href="particulars.html">IoT</a></li>
 				<li><a href="#">云服务</a></li>
-				<li><a href="#">水滴</a></li>
+				<li><a href="particulars2.html">水滴</a></li>
 				<li><a href="#">金融</a></li>
 				<li><a href="#">有品</a></li>
 				<li><a href="#">Select Region</a></li>
@@ -24,10 +45,834 @@
 				<li><a href="login.html">登录</a></li>
 				<li><a href="register.html">注册</a></li>
 				<li><a href="#">消息通知</a></li>
-				<li><a href="#">购物车</a></li>
+				<li id="shopBtn"><a  href="details.html"><i class="iconfont icon-cart"></i>购物车(0)</a>
+                    <div class="shopMenu" style="display: none">
+                        <div class="shop_cart">购物车中还没有商品，赶紧选购吧</div>
+                    </div>
+                </li>
 			</ul>
 
 		</header>
 	</div>
+
+<!--------------------site-header-------------------->
+
+	<div class="site-header">
+		<div class="contener">
+			<div class="header-logo">
+			</div>
+			<div class = "header-logo1">
+				<img src="../images/index/5折.gif"/>
+			</div>
+			<ul class="nav">
+				<li><a href="#">小米手机</a>
+
+				</li>
+				<li><a href="#">红米</a>
+
+				</li>
+				<li><a href="#">电视</a>
+
+				</li>
+				<li><a href="#">笔记本</a>
+
+
+				</li>
+				<li><a href="#">盒子</a></li>
+				<li><a href="#">新品</a></li>
+				<li><a href="#">路由器</a></li>
+				<li><a href="#">智能硬件</a></li>
+				<li><a href="#">服务</a></li>
+				<li><a href="#">社区</a></li>
+			</ul>
+            <div class="down_ul" style="display: none">
+                <ul>
+                    <li class="produs">
+                        <img src="../images/index/320-220-1.png"/>
+                        <div class="text">
+                            <a href="#">小米MIX 2</a>
+                            <p class="price">2199元起</p>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+			<div class="header-search">
+				<form> 
+					<label for="search">站内搜索</label>
+					<input type="text" id="search" placeholder="红米5 Plus 小米Note 3" />
+					<input type="submit" id="submit" value="搜索"/>
+					<ul id="search_ul">
+						
+					</ul>
+				</form>
+				
+			</div>
+		</div>
+	</div>
+<!------------------------banner--------------------------->
+	<div class="banner_wrap">
+			<!--  菜单项 -->
+			<div class="options_bar">
+				<ul id="option_wrap">
+					<li class="options_items"><a class="items_a" href="#">手机 电话卡</a><span>></span>
+					</li>
+					<li class="options_items"><a class="items_a" href="#">电视 盒子</a><span>></span>
+
+					</li>
+					<li class="options_items"><a class="items_a" href="#">笔记本</a><span>></span>
+
+					</li>
+                    <li class="options_items"><a class="items_a" href="#">智能 家电</a><span>></span>
+
+                    </li>
+                    <li class="options_items"><a class="items_a" href="#">健康 家居</a><span>></span>
+
+                    </li>
+                    <li class="options_items"><a class="items_a" href="#">出行 儿童</a><span>></span>
+
+                    </li>
+                    <li class="options_items"><a class="items_a" href="#">路由器 手机配件</a><span>></span>
+
+                    </li>
+                    <li class="options_items"><a class="items_a" href="#">移动电源 插线板</a><span>></span>
+
+                    </li>
+                    <li class="options_items"><a class="items_a" href="#">耳机 音响</a><span>></span>
+
+                    </li>
+                    <li class="options_items"><a class="items_a" href="#">生活 米兔</a><span>></span>
+
+                    </li>
+				</ul>
+			</div>
+            <div class="little_ul">
+                <ul>
+                    <li>
+                        <img src="../images/index/options/mix2-80.png"/>
+                        <a href="#">小米Note 3</a>
+                    </li>
+
+                </ul>
+                <ul>
+                    <li>
+                        <img src="../images/index/options/mix2-80.png"/>
+                        <a href="#">小米Note 3</a>
+                    </li>
+                    <li>
+                        <img src="../images/index/options/mix2-80.png"/>
+                        <a href="#">小米Note 3</a>
+                    </li>
+                    <li>
+                        <img src="../images/index/options/mix2-80.png"/>
+                        <a href="#">小米Note 3</a>
+                    </li>
+                    <li>
+                        <img src="../images/index/options/mix2-80.png"/>
+                        <a href="#">小米Note 3</a>
+                    </li>
+                    <li>
+                        <img src="../images/index/options/mix2-80.png"/>
+                        <a href="#">小米Note 3</a>
+                    </li>
+                    <li>
+                        <img src="../images/index/options/mix2-80.png"/>
+                        <a href="#">小米Note 3</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="../images/index/options/mix2-80.png"/>
+                        <a href="#">小米Note 3</a>
+                    </li>
+                    <li>
+                        <img src="../images/index/options/mix2-80.png"/>
+                        <a href="#">小米Note 3</a>
+                    </li>
+                    <li>
+                        <img src="../images/index/options/mix2-80.png"/>
+                        <a href="#">小米Note 3</a>
+                    </li>
+                    <li>
+                        <img src="../images/index/options/mix2-80.png"/>
+                        <a href="#">小米Note 3</a>
+                    </li>
+                    <li>
+                        <img src="../images/index/options/mix2-80.png"/>
+                        <a href="#">小米Note 3</a>
+                    </li>
+                    <li>
+                        <img src="../images/index/options/mix2-80.png"/>
+                        <a href="#">小米Note 3</a>
+                    </li>
+                </ul>
+
+            </div>
+		<!-- 轮播图 -->
+		<div class="banner">
+
+			<ol>
+				<li class="active">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ol>
+			<div class="arrows">
+				<a href="#"> < </a>
+				<a href="#"> > </a>
+			</div>
+			<ul class="slide_wrap">
+
+				<li>
+					<a href="#"><img src="../images/index/xmad_15163680664769_fVkzU.jpg"></a>
+				</li>
+				<li>
+					<a href="#"><img src="../images/index/xmad_15039951895346_BYpul.jpg"></a>
+				</li>
+				<li>
+					<a href="#"><img src="../images/index/xmad_15183489187128_DOSHM.jpg"></a>
+				</li>
+				<li>
+					<a href="#"><img src="../images/index/xmad_15185161877192_cylji.jpg"></a>
+				</li>
+				<li>
+					<a href="#"><img src="../images/index/xmad_15127346139897_mVvPT.jpg"></a>
+				</li>
+
+				<!-- 第一张图补到后面 -->
+				<li>
+					<a href="#"><img src="../images/index/xmad_15163680664769_fVkzU.jpg"></a>
+				</li>
+
+			</ul>
+				
+		</div>
+	</div>
+    <div class="home-row">
+        <div class="home_left">
+            <ul>
+                <li><i class="iconfont icon-shouji"></i>
+                    <a href="#">选购手机</a>
+                </li>
+                <li><i class="iconfont icon-daifahuo"></i>
+                    <a href="#">F码通道</a>
+                </li>
+                <li><i class="iconfont icon-jia"></i>
+                    <a href="#">米粉卡</a>
+                </li>
+                <li><i class="iconfont icon-yiguanzhu"></i>
+                    <a href="#">以旧换新</a>
+                </li>
+                <li><i class="iconfont icon-erweima"></i>
+                    <a href="#">话费充值</a>
+                </li>
+                <li><i class="iconfont icon-xinlang"></i>
+                    <a href="#">企业回购</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="img_ul">
+            <li><img src="../images/index/xmad_1514890130872_YxLHJ.jpg"/></li>
+            <li><img src="../images/index/xmad_15181888707295_WBoYc.jpg"/></li>
+            <li><img src="../images/index/xmad_15054028754131_cEsBq.jpg"/></li>
+        </ul>
+    </div>
+
+    <div class="home-star-goods">
+        <div class="star-wrap">
+            <div class="title">
+                <h2>小米明星单品</h2>
+                <p class="btns">
+                    <a id = "pre" href="javascript:;">< </a>
+                    <a id = "next" class="active" href="javascript:;"> ></a>
+                </p>
+            </div>
+            <div class="ul_wrap">
+                <ul class="rainbow_list">
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/858c77b0-4a70-411f-bb1e-9b600c5897a6.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/T14iKgBXZv1RXrhCrK.JPG"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/302f2608-655a-489c-a0c5-a3b9172defd1.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/d70bc596-524b-4a05-996b-ceccc072fc5e.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <!--第二栏-->
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/xmad_15117763039715_jXbCQ.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/xmad_14966439643705_MKJdt.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/xmad_15117902994108_rHXdA.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/pms_1503909150.67293503!220x220.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/073b5ddc-9117-4668-adbe-878c928a79da.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-main first-main">
+        <div class="box-hd">
+            <h3 class="title">家电</h3>
+
+            <div class="brickNav">
+                <ul class="brickNav_list">
+                    <li><a href="#" class="active">热门</a></li>
+                    <li><a href="#">电视影音</a></li>
+                    <li><a href="#">电脑</a></li>
+                    <li><a href="#">家居</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="row_l">
+                <a href="#"><img src="../images/index/1695c18e-8a6b-4bc9-9796-d5abad413184.jpg"/></a>
+            </div>
+            <div class="row_r">
+                <ul class="ul_1">
+                    <li><img src="../images/index/pms_1500287084.72131750!220x220.jpg">
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="div1">
+                            <img src="../images/index/pms_1468806372.46368911!220x220.jpg"/>
+                            <p class="desc">小白摄像机</p>
+                            <p class="price">399元</p>
+                        </div>
+                        <div class="div1">
+                            <img src="../images/index/pms_1468806372.46368911!220x220.jpg"/>
+                            <p class="desc">小白摄像机</p>
+                            <p class="price">399元</p>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="home-star-goods">
+        <div class="star-wrap">
+            <div class="title">
+                <h2>为你推荐</h2>
+                <p class="btns">
+                    <a  href="javascript:;">< </a>
+                    <a  class="active" href="javascript:;"> ></a>
+                </p>
+            </div>
+            <div class="ul_wrap">
+                <ul class="rainbow_list">
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/858c77b0-4a70-411f-bb1e-9b600c5897a6.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/T14iKgBXZv1RXrhCrK.JPG"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/302f2608-655a-489c-a0c5-a3b9172defd1.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/d70bc596-524b-4a05-996b-ceccc072fc5e.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <!--第二栏-->
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/xmad_15117763039715_jXbCQ.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/xmad_14966439643705_MKJdt.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/xmad_15117902994108_rHXdA.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/pms_1503909150.67293503!220x220.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/073b5ddc-9117-4668-adbe-878c928a79da.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="home-main ">
+        <div class="box-hd">
+            <h3 class="title">家电</h3>
+
+            <div class="brickNav">
+                <ul>
+                    <li><a href="#" class="active">热门</a></li>
+                    <li><a href="#">电视影音</a></li>
+                    <li><a href="#">电脑</a></li>
+                    <li><a href="#">家居</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="row_l">
+                <a href="#"><img src="../images/index/1695c18e-8a6b-4bc9-9796-d5abad413184.jpg"/></a>
+            </div>
+            <div class="row_r">
+                <ul class="ul_1">
+                    <li><img src="../images/index/pms_1500287084.72131750!220x220.jpg">
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li><img src="../images/index/pms_1510124061.78733980!220x220.jpg">
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li><img src="../images/index/pms_1482321199.12589253.jpg">
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li><img src="../images/index/pms_1502258923.87257653!220x220.jpg">
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li><img src="../images/index/pms_1517372151.25216342!220x220.jpg">
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li><img src="../images/index/pms_1499851022.23924395.jpg">
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li><img src="../images/index/pms_1504857016.28989682!220x220.jpg">
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="div1">
+                            <img src="../images/index/pms_1468806372.46368911!220x220.jpg"/>
+                            <p class="desc">小白摄像机</p>
+                            <p class="price">399元</p>
+                        </div>
+                        <div class="div1">
+                            <img src="../images/index/pms_1468806372.46368911!220x220.jpg"/>
+                            <p class="desc">小白摄像机</p>
+                            <p class="price">399元</p>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="home-main last-main">
+        <div class="box-hd">
+            <h3 class="title">家电</h3>
+
+            <div class="brickNav">
+                <ul class="brickNav_list">
+                    <li><a href="#" class="active">热门</a></li>
+                    <li><a href="#">电视影音</a></li>
+                    <li><a href="#">电脑</a></li>
+                    <li><a href="#">家居</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="row_l">
+                <a href="#"><img src="../images/index/1695c18e-8a6b-4bc9-9796-d5abad413184.jpg"/></a>
+            </div>
+            <div class="row_r">
+                <ul class="ul_1">
+                    <li><img src="../images/index/pms_1500287084.72131750!220x220.jpg">
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="div1">
+                            <img src="../images/index/pms_1468806372.46368911!220x220.jpg"/>
+                            <p class="desc">小白摄像机</p>
+                            <p class="price">399元</p>
+                        </div>
+                        <div class="div1">
+                            <img src="../images/index/pms_1468806372.46368911!220x220.jpg"/>
+                            <p class="desc">小白摄像机</p>
+                            <p class="price">399元</p>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-star-goods">
+        <div class="star-wrap">
+            <div class="title">
+                <h2>为你推荐</h2>
+                <p class="btns">
+                    <a  href="javascript:;">< </a>
+                    <a  class="active" href="javascript:;"> ></a>
+                </p>
+            </div>
+            <div class="ul_wrap">
+                <ul class="rainbow_list">
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/858c77b0-4a70-411f-bb1e-9b600c5897a6.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/T14iKgBXZv1RXrhCrK.JPG"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/302f2608-655a-489c-a0c5-a3b9172defd1.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/d70bc596-524b-4a05-996b-ceccc072fc5e.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <!--第二栏-->
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/xmad_15117763039715_jXbCQ.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/xmad_14966439643705_MKJdt.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/xmad_15117902994108_rHXdA.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/pms_1503909150.67293503!220x220.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="img_a"><img src="../images/index/073b5ddc-9117-4668-adbe-878c928a79da.png"/></a>
+                        <div class="text">
+                            <a href="#">小米手环</a>
+                            <p class="desc">OLED 显示屏幕,升级计步算法</p>
+                            <p class="price">149元</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-video">
+        <div class="title">
+            <h3>视频</h3>
+            <div class="right">
+            <a href="#">查看全部</a>
+            <i class="iconfont icon-fanhui6"></i>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <div class="img_wrap">
+                    <img src="../images/index/xmad_15159163504023_uToSM.jpg"/>
+                    <span class="video-btn">
+                         <i class="iconfont icon-bofang"></i>
+                    </span>
+                </div>
+                <div class="text-b">
+                    <a href="#">品质之魂 存于匠心</a>
+                    <p class="desc">红米手机品质的工程师访谈</p>
+                </div>
+            </li>
+            <li>
+
+                <div class="img_wrap">
+                    <img src="../images/index/xmad_15156644526382_GiJxL.jpg"/>
+                    <span class="video-btn">
+                         <i class="iconfont icon-bofang"></i>
+                    </span>
+                </div>
+                <div class="text-b">
+                    <a href="#">品质之魂 存于匠心</a>
+                    <p class="desc">红米手机品质的工程师访谈</p>
+                </div>
+
+            </li>
+            <li>
+                <div class="img_wrap">
+                    <img src="../images/index/xmad_15156722682931_MVAmC.jpg"/>
+                    <span class="video-btn">
+                         <i class="iconfont icon-bofang"></i>
+                    </span>
+                </div>
+                <div class="text-b">
+                    <a href="#">品质之魂 存于匠心</a>
+                    <p class="desc">红米手机品质的工程师访谈</p>
+                </div>
+            </li>
+            <li>
+
+                <div class="img_wrap">
+                    <img src="../images/index/xmad_15156722489305_NSZUh.jpg"/>
+                    <span class="video-btn">
+                         <i class="iconfont icon-bofang"></i>
+                    </span>
+                </div>
+                <div class="text-b">
+                    <a href="#">品质之魂 存于匠心</a>
+                    <p class="desc">红米手机品质的工程师访谈</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="site-footer">
+        <div class="container">
+            <div class="footer-service">
+                <ul>
+                    <li><a>预约维修服务</a></li>
+                    <li><a>7天无理由退换</a></li>
+                    <li><a>15天免费换货</a></li>
+                    <li><a>满150元包邮</a></li>
+                    <li><a>520余家售后网点</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <dl class="col-links">
+                    <dt>帮助中心</dt>
+                    <dd><a href="#">账户管理</a></dd>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">订单操作</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>帮助中心</dt>
+                    <dd><a href="#">账户管理</a></dd>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">订单操作</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>帮助中心</dt>
+                    <dd><a href="#">账户管理</a></dd>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">订单操作</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>帮助中心</dt>
+                    <dd><a href="#">账户管理</a></dd>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">订单操作</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>帮助中心</dt>
+                    <dd><a href="#">账户管理</a></dd>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">订单操作</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt>帮助中心</dt>
+                    <dd><a href="#">账户管理</a></dd>
+                    <dd><a href="#">购物指南</a></dd>
+                    <dd><a href="#">订单操作</a></dd>
+                </dl>
+                <div class="col-contact">
+                    <p class="phone">400-100-5678</p>
+                    <p>
+                        周一至周日 8:00-18:00</br>
+                        （仅收市话费）
+                    </p>
+                    <a href="#">
+                        24小时在线客服
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </body>
 </html>

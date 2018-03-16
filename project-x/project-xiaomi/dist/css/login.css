@@ -15,7 +15,7 @@ a {
 .header {
   background: #fff; }
   .header header {
-    width: 1130px;
+    width: 1226px;
     margin: auto;
     height: 98px; }
     .header header a {
@@ -35,7 +35,7 @@ a {
     padding: 32px;
     padding-bottom: 10px;
     position: absolute;
-    left: 1085px;
+    left: 917px;
     top: 30px;
     width: 410px;
     height: 540px;
@@ -114,6 +114,9 @@ a {
 #notice {
   padding-top: 10px;
   display: block; }
+
+#submit {
+  cursor: pointer; }
 
 footer {
   margin-top: 100px;

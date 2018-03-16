@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/account.css">
+    <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_571570_09fhz59svu7ynwmi.css">
+    <!-- 相对index.html的路径 -->
+    <script type="text/javascript" src="js/require.js" asyn= "true" data-main="js/account" defer></script>
+</head>
+<body>
+
+<div class="site-header">
+    <div class="container">
+        <div class="header-logo">
+            <a href="index.html"><img src="../images/shopCart/mi-home.png"/></a>
+        </div>
+        <div class="header-title">
+            <h2>我的购物车</h2>
+            <p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+        </div>
+        <div class="userInfo">
+            <a href="#">登录</a>
+            <span class="sep">|</span>
+            <a href="#">注册</a>
+        </div>
+    </div>
+</div>
+<div class="page-main">
+    <div class="container">
+        <div class="cartBox">
+            <div class="cart-goods-list">
+                <div class="list-head">
+                    <div class="col col-check">
+                        <i class="iconfont icon-checkbox1">√</i>全选
+                    </div>
+                    <div class="col col-img"></div>
+                    <div class="col col-name">商品名称</div>
+                    <div class="col col-price">单价</div>
+                    <div class="col col-num">数量</div>
+                    <div class="col col-total">小计</div>
+                    <div class="col col-action">操作</div>
+                </div>
+                <div class="cartListBody">
+                    <div class="item-box">
+                        <div class="item-table">
+                            <!--一个商品-->
+                            <div class="item-row">
+                                <div class="col col-check">
+                                    <i class="iconfont icon-checkbox1">√</i>
+                                </div>
+                                <div class="col col-img">
+                                    <img src="../images/shopCart/pms_1511228654.33099308!80x80.jpg" />
+                                </div>
+                                <div class="col col-name">
+                                    <h3><a href="#"> 小米Note 3 全网通版 4GB内存 亮黑色 64GB</a></h3>
+                                </div>
+                                <div class="col col-price">1899元</div>
+                                <div class="col col-num">
+                                    <div class="change-goods-num">
+                                        <a class="sNum" href="javascript:;">-</a>
+                                        <input type="text" name="num" value="1">
+                                        <a class="plusNum" href="javascript:;">+</a>
+                                    </div>
+                                </div>
+                                <div class="col col-total">1899元</div>
+                                <div class="col col-action"><a href="#">
+                                    <i class="iconfont icon-del"></i>
+                                </a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="buyBox">
+                <div class="cartBar">
+                    <div class="section-left">
+                        <a href="#">继续购物</a>
+                        <span class="cartTotal">共<i id="totalNum1">1</i>件商品 已选择<i id="totalNum2">0</i>件</span>
+                    </div>
+                    <span class="total-price">
+                        合计<em id="J_cartTotalPrice">0</em>元
+                    </span>
+                    <a id="goCheckout">去结算</a>
+                    <div class="no-select-tip" id="J_noSelectTip">
+                        请勾选需要结算的商品
+                        <i class="arrow arrow-a"></i>
+                        <i class="arrow arrow-b"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="site-footer">
+    <div class="container">
+        <div class="footer-service">
+            <ul>
+                <li><a>预约维修服务</a></li>
+                <li><a>7天无理由退换</a></li>
+                <li><a>15天免费换货</a></li>
+                <li><a>满150元包邮</a></li>
+                <li><a>520余家售后网点</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <dl class="col-links">
+                <dt>帮助中心</dt>
+                <dd><a href="#">账户管理</a></dd>
+                <dd><a href="#">购物指南</a></dd>
+                <dd><a href="#">订单操作</a></dd>
+            </dl>
+            <dl class="col-links">
+                <dt>帮助中心</dt>
+                <dd><a href="#">账户管理</a></dd>
+                <dd><a href="#">购物指南</a></dd>
+                <dd><a href="#">订单操作</a></dd>
+            </dl>
+            <dl class="col-links">
+                <dt>帮助中心</dt>
+                <dd><a href="#">账户管理</a></dd>
+                <dd><a href="#">购物指南</a></dd>
+                <dd><a href="#">订单操作</a></dd>
+            </dl>
+            <dl class="col-links">
+                <dt>帮助中心</dt>
+                <dd><a href="#">账户管理</a></dd>
+                <dd><a href="#">购物指南</a></dd>
+                <dd><a href="#">订单操作</a></dd>
+            </dl>
+            <dl class="col-links">
+                <dt>帮助中心</dt>
+                <dd><a href="#">账户管理</a></dd>
+                <dd><a href="#">购物指南</a></dd>
+                <dd><a href="#">订单操作</a></dd>
+            </dl>
+            <dl class="col-links">
+                <dt>帮助中心</dt>
+                <dd><a href="#">账户管理</a></dd>
+                <dd><a href="#">购物指南</a></dd>
+                <dd><a href="#">订单操作</a></dd>
+            </dl>
+            <div class="col-contact">
+                <p class="phone">400-100-5678</p>
+                <p>
+                    周一至周日 8:00-18:00</br>
+                    （仅收市话费）
+                </p>
+                <a href="#">
+                    24小时在线客服
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>

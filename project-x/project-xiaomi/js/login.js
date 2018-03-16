@@ -11,7 +11,7 @@ require.config({
 })
 
 
-require(["jquery","check"],function($,check){
+require(["check","jquery","jquery-cookie"],function(check,$){
 
 		$(function(){
 
@@ -34,34 +34,55 @@ require(["jquery","check"],function($,check){
 			})
 
 
+            /*==============代码检测===========*/
+
+
 			//添加 失去焦点事件   当失去焦点 进行判断
 				$("#username").blur(function(){
-					check.check($("#username"),$("#notice"));
+                    check.check($("#username"),$("#notice"));
 				});
 			/*	
 				用户名验证 使用cookie验证 
 				输入文本框中的和cookie中的做对比
 			*/
-				//添加click事件
+				//给登录按钮添加click事件
 				$("#submit").click(function(){
-					//当点击登录按钮跟cookie对比
-					//获取cookie
-					var first = $.cookie("username") == null ? true : false;
-					if(first){
-						$("#notice").html("用户名或密码不正确");
-						$("#notice").attr("class","red");
-					}else{
-						//如果有这个cookie
+					//当我点击 登录按钮  进行验证
+					//如果验证成功 执行submit的默认的行为return true  否则 return false
 
+                    var username = $("#username").val();
+                    var psw = $("#psw").val();
+					if($("#notice").attr("class") == "green"){
+                        //获取该用户名的cookie
+                        var str = eval($.cookie(username));
+                        if(str){
+                            //如果存在说明注册过 进一步核对密码
+                            console.log(str);
+                            if(psw == str.psw){
+                                alert("登录成功");
+                            }else{
+                                alert("密码不正确");
+                            }
+
+
+                        }else{
+                            alert("用户名不存在，请先注册");
+                        }
+
+						return false;
+					}else{
+						return false;
 					}
 				})
+
+
 
 			
 		})
 
 })
 
-//要去调用index-login.js中的main函数
-require(["check"], function(check){
-	console.log("成功");
-})
+// //要去调用index-login.js中的main函数
+// require(["check"], function(check){
+// 	console.log("成功");
+// })

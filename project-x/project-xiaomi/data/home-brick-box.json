@@ -1,0 +1,109 @@
+[
+  {"title":"热门",
+    "items":
+    [{"id":0,"img":"../images/index/pms_1500287084.72131750!220x220.jpg",
+      "title":"小米电视4A 32英寸","desc":"64位四核处理器 / 1GB+4GB大内存","price":"999元"
+    },{
+      "id":1,"img":"../images/index/pms_1510124061.78733980!220x220.jpg",
+      "title":"小米电视4A 32英寸","desc":"64位四核处理器 / 1GB+4GB大内存","price":"999元"
+    },{
+      "id":2,"img":"../images/index/pms_1502258923.87257653!220x220.jpg",
+      "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+    },{
+      "id":3,"img":"../images/index/pms_1517372151.25216342!220x220.jpg",
+      "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+    },{
+      "id":4,"img":"../images/index/pms_1499851022.23924395.jpg",
+      "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+    },{
+      "id":5,"img":"../images/index/pms_1504857016.28989682!220x220.jpg",
+      "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+    },{
+      "id":6,"img":"../images/index/pms_1468806372.46368911!220x220.jpg",
+      "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+    },{
+      "id":5,"img":"../images/index/pms_1504857016.28989682!220x220.jpg",
+      "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+    }]
+  },{
+  "title":"电视影音",
+  "items":
+  [{"id":0,"img":"../images/index/pms_1503909300.25797209!220x220.png",
+    "title":"小米电视4A 32英寸","desc":"64位四核处理器 / 1GB+4GB大内存","price":"999元"
+  },{
+    "id":1,"img":"../images/index/pms_1503909218.70932288!220x220.png",
+    "title":"小米电视4A 32英寸","desc":"64位四核处理器 / 1GB+4GB大内存","price":"999元"
+  },{
+    "id":2,"img":"../images/index/pms_1496997930.13622399!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":3,"img":"../images/index/pms_1505897517.20426731!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":4,"img":"../images/index/pms_1517208434.21497750!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":5,"img":"../images/index/T1sWd_B7VT1RXrhCrK!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":6,"img":"../images/index/pms_1506733860.3164711!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":5,"img":"../images/index/pms_1488338229.6467773!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  }]
+},{"title":"热门",
+  "items":
+  [{"id":0,"img":"../images/index/pms_1500287084.72131750!220x220.jpg",
+    "title":"小米电视4A 32英寸","desc":"64位四核处理器 / 1GB+4GB大内存","price":"999元"
+  },{
+    "id":1,"img":"../images/index/pms_1510124061.78733980!220x220.jpg",
+    "title":"小米电视4A 32英寸","desc":"64位四核处理器 / 1GB+4GB大内存","price":"999元"
+  },{
+    "id":2,"img":"../images/index/pms_1502258923.87257653!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":3,"img":"../images/index/pms_1517372151.25216342!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":4,"img":"../images/index/pms_1499851022.23924395.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":5,"img":"../images/index/pms_1504857016.28989682!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":6,"img":"../images/index/pms_1468806372.46368911!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":5,"img":"../images/index/pms_1504857016.28989682!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  }]
+},{
+  "title":"电视影音",
+  "items":
+  [{"id":0,"img":"../images/index/pms_1503909300.25797209!220x220.png",
+    "title":"小米电视4A 32英寸","desc":"64位四核处理器 / 1GB+4GB大内存","price":"999元"
+  },{
+    "id":1,"img":"../images/index/pms_1503909218.70932288!220x220.png",
+    "title":"小米电视4A 32英寸","desc":"64位四核处理器 / 1GB+4GB大内存","price":"999元"
+  },{
+    "id":2,"img":"../images/index/pms_1496997930.13622399!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":3,"img":"../images/index/pms_1505897517.20426731!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":4,"img":"../images/index/pms_1517208434.21497750!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":5,"img":"../images/index/T1sWd_B7VT1RXrhCrK!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":6,"img":"../images/index/pms_1506733860.3164711!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  },{
+    "id":5,"img":"../images/index/pms_1488338229.6467773!220x220.jpg",
+    "title":"小米手环","desc":"OLED 显示屏幕,升级计步算法","price":"149元"
+  }]
+}
+]

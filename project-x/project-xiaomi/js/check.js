@@ -13,8 +13,8 @@ define(["jquery","jquery-cookie"], function($){
 					//当input失去焦点时验证
 					//1、去除空格 将"空格" 用""替换
 					//字符串不能被更改该方法会,返回一个新的字符串
-					var newStr = username.val().replace(/ /ig,"");
-					username.val(newStr);
+					var newStr = obj.val().replace(/ /ig,"");
+					obj.val(newStr);
 					//2、判断用户名是否为空  //通过length来判断
 					var len = newStr.length;
 					if(!len){
@@ -43,7 +43,8 @@ define(["jquery","jquery-cookie"], function($){
 							notice.attr("class","red");
 						
 						}else{
-							notice.css("display","none");
+							notice.html("成功");
+							notice.attr("class","green");
 							notice.removeClass("red");
 						}
 					}	
